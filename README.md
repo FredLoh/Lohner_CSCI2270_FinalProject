@@ -16,4 +16,5 @@ We've included an executable but if you wish to compile it yourself you can use 
 
 To execute run ./Final namelist.txt
 
-Compiling the program may take several minutes.
+Compiling the program may take several minutes as it is creating a linked list that is very large.
+
