@@ -24,22 +24,22 @@ int main(int argc, char* argv[]){
     bool quit = false;
     while(!quit){
         cout << "======Main Menu======" << endl;
-        cout << "1. Print List" << endl;
-        cout << "2. Print x most common names" << endl;
-        cout << "3. Print x least common names" << endl;
-        cout << "4. Print number of times name is found" << endl;
-        cout << "5. Insert name" << endl;
-        cout << "6. Delete name" << endl;
-        cout << "7. Print all names that occur a certain number of times" << endl;
-        cout << "8. Sort List (Bubble or Merge)" << endl;
+        cout << "1. Sort List (Bubble or Merge)" << endl;
+        cout << "2. Print List" << endl;
+        cout << "3. Print x most common names" << endl;
+        cout << "4. Print x least common names" << endl;
+        cout << "5. Print number of times name is found" << endl;
+        cout << "6. Insert name" << endl;
+        cout << "7. Delete name" << endl;
+        cout << "8. Print all names that occur a certain number of times" << endl;
         cout << "9. Quit" << endl;
 
         string response;
         getline(cin, response);
-        if(response == "1"){
+        if(response == "2"){
             NL.printList(NL.headReturner());
         }
-        else if(response == "2"){
+        else if(response == "3"){
             if(sorted == true)
             {
                 cout << "How many names to print?" << endl;
@@ -51,7 +51,7 @@ int main(int argc, char* argv[]){
                 cout << "List has not been sorted." << endl;
             }
         }
-        else if(response == "3"){
+        else if(response == "4"){
             if(sorted == true)
             {
             cout << "How many names to print?" << endl;
@@ -63,28 +63,28 @@ int main(int argc, char* argv[]){
                 cout << "List has not been sorted." << endl;
             }
         }
-        else if(response == "4"){
+        else if(response == "5"){
             cout << "Name?" << endl;
             getline(cin, response);
             NL.nameOccurrence(response);
         }
-        else if(response == "5"){
+        else if(response == "6"){
             cout << "What is the name to be inserted." << endl;
             getline(cin, response);
             NL.insertName(response);
             sorted = false;
         }
-        else if(response == "6"){
+        else if(response == "7"){
             cout << "Name to be deleted?" << endl;
             getline(cin, response);
             NL.deleteName(response);
         }
-        else if(response == "7"){
+        else if(response == "8"){
             cout << "What occurance do you wish to check?" << endl;
             getline(cin, response);
-            NL.nameOccurrence(response);
+            NL.printByOcurrence(stoi(response));
         }
-        else if(response == "8"){
+        else if(response == "1"){
             /*You can see that we used the clock function given by time.h to measure
             the difference between a bubble and a merge sort, this gives the user a
             very clear idea as to the differences in efficiency between the two. */
