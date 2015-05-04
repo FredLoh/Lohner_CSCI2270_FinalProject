@@ -10,8 +10,20 @@ The main goal of this project is to showcase the difference in efficiency of dif
 
 Bubble sort worst case performance is of O(n^2) versus Merge sort worst case performance of O(n log n)
 
+
+###Group Members
 Team is composed of Frederik Lohner and Chris Rhoda.
+
+###How to Run
 
 We've included an executable but if you wish to compile it yourself you can use g++ Namelist.cpp FinalDriver.cpp -std=c++11 -o Final
 
 To execute run ./Final namelist.txt
+
+###Contributors
+elor7824
+naiv9491 
+
+###Dependencies
+None
+
